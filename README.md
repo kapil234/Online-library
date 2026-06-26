@@ -1,16 +1,79 @@
-# React + Vite
+# 📚 Online Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An Online Library web application built using **React**, **React Router**, **Redux Toolkit**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🏠 Home Page
+  - Welcome banner
+  - Book categories
+  - Top 4 popular books
+  - View Details button
 
-## React Compiler
+- 📖 Browse Books
+  - View all books
+  - Filter books by category
+  - Search books by title or author
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📚 Book Details
+  - Displays complete information about a selected book
+  - Book image
+  - Author
+  - Rating
+  - Description
 
-## Expanding the ESLint configuration
+- ➕ Add Book
+  - Add new books using a form
+  - Form validation
+  - Redux state management
+  - Newly added books appear at the top of the Browse Books page
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ❌ 404 Page
+  - Displays invalid route
+  - Link back to Home
+
+- 📱 Responsive Design
+  - Mobile-friendly UI using Tailwind CSS
+
+---
+## Technologies Used
+
+- React
+- React Router DOM
+- Redux Toolkit
+- React Redux
+- Tailwind CSS
+- Vite
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/kapil234/Online-library.git
+```
+
+### 2. Navigate to the project folder
+
+```bash
+cd online-library
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+The application will start on:
+
+```
+http://localhost:5173
+```
+
+---
