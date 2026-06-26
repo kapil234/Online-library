@@ -1,18 +1,25 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import books from "../data/books";
+import { useSelector } from "react-redux";
+
 import SearchBar from "../components/SearchBar";
 import BookCard from "../components/BookCard";
 import Navbar from "../components/Navbar";
+
 function BrowseBooks() {
   const { category } = useParams();
+
+  // Get books from Redux store
+  const books = useSelector((state) => state.books.books);
 
   const [search, setSearch] = useState("");
 
   const filteredBooks = books.filter((book) => {
+    // Filter by category
     const matchCategory =
       category === "all" || book.category === category;
 
+    // Filter by search
     const matchSearch =
       book.title.toLowerCase().includes(search.toLowerCase()) ||
       book.author.toLowerCase().includes(search.toLowerCase());
@@ -27,11 +34,7 @@ function BrowseBooks() {
       <div className="max-w-7xl mx-auto py-10 px-5">
 
         <h1 className="text-4xl font-bold mb-6">
-
-          {category === "all"
-            ? "All Books"
-            : category.toUpperCase()}
-
+          {category === "all" ? "All Books" : category}
         </h1>
 
         <SearchBar
@@ -40,7 +43,6 @@ function BrowseBooks() {
         />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
-
           {filteredBooks.length > 0 ? (
             filteredBooks.map((book) => (
               <BookCard
@@ -49,14 +51,19 @@ function BrowseBooks() {
               />
             ))
           ) : (
-            <h2>No Books Found</h2>
+            <div className="col-span-full text-center">
+              <h2 className="text-2xl font-semibold text-gray-600">
+                No Books Found 📚
+              </h2>
+            </div>
           )}
-
         </div>
 
       </div>
     </>
   );
 }
+
+
 
 export default BrowseBooks

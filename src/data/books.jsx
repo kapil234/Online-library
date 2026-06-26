@@ -5,6 +5,7 @@ const books = [
     author: "Paulo Coelho",
     category: "Fiction",
     rating: 4.8,
+    description: "A young shepherd, Santiago, embarks on a journey to discover hidden treasure while learning about destiny, dreams, and the true meaning of life.",
     image: "https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg",
   },
   {
@@ -13,6 +14,7 @@ const books = [
     author: "James Clear",
     category: "Self Help",
     rating: 4.9,
+    description: "A practical guide that teaches how small daily habits can create remarkable personal and professional success over time.",
     image: "https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg",
   },
   {
@@ -21,6 +23,7 @@ const books = [
     author: "J.K. Rowling",
     category: "Fantasy",
     rating: 4.9,
+    description: "Harry Potter discovers he is a wizard and begins his magical adventure at Hogwarts School of Witchcraft and Wizardry.",
     image: "https://covers.openlibrary.org/b/id/7984916-L.jpg",
   },
   {
@@ -29,6 +32,7 @@ const books = [
     author: "Robert Kiyosaki",
     category: "Self Help",
     rating: 4.7,
+    description: "A bestselling book that explains financial literacy, investing, and building wealth through real-life lessons.",
     image: "https://images-na.ssl-images-amazon.com/images/I/81bsw6fnUiL.jpg",
   },
   {
@@ -37,6 +41,7 @@ const books = [
     author: "Harper Lee",
     category: "Fiction",
     rating: 4.8,
+    description: "A classic novel exploring justice, compassion, and racial inequality through the eyes of young Scout Finch.",
     image: "https://covers.openlibrary.org/b/id/8228691-L.jpg",
   },
   {
@@ -45,6 +50,7 @@ const books = [
     author: "F. Scott Fitzgerald",
     category: "Fiction",
     rating: 4.6,
+    description: "A story of love, wealth, and ambition during America's Roaring Twenties, centered around the mysterious Jay Gatsby.",
     image: "https://covers.openlibrary.org/b/id/7352161-L.jpg",
   },
   {
@@ -53,6 +59,7 @@ const books = [
     author: "Yuval Noah Harari",
     category: "Non Fiction",
     rating: 4.9,
+    description: "An exploration of human history, from the earliest civilizations to the modern technological world.",
     image: "https://covers.openlibrary.org/b/id/8370226-L.jpg",
   },
   {
@@ -61,6 +68,7 @@ const books = [
     author: "Tara Westover",
     category: "Non Fiction",
     rating: 4.7,
+    description: "A memoir about overcoming a difficult childhood through education, determination, and self-discovery.",
     image: "https://covers.openlibrary.org/b/id/9251996-L.jpg",
   },
   {
@@ -69,6 +77,7 @@ const books = [
     author: "Andy Weir",
     category: "Sci-Fi",
     rating: 4.8,
+    description: "An astronaut stranded on Mars uses science and determination to survive against impossible odds.",
     image: "https://covers.openlibrary.org/b/id/8379785-L.jpg",
   },
   {
@@ -77,6 +86,7 @@ const books = [
     author: "Frank Herbert",
     category: "Sci-Fi",
     rating: 4.9,
+    description: "An epic science fiction novel about power, politics, survival, and destiny on the desert planet Arrakis.",
     image: "https://covers.openlibrary.org/b/id/8101356-L.jpg",
   },
   {
@@ -85,6 +95,7 @@ const books = [
     author: "Isaac Asimov",
     category: "Sci-Fi",
     rating: 4.8,
+    description: "A legendary science fiction story about preserving knowledge and rebuilding civilization after a galactic empire falls.",
     image: "https://covers.openlibrary.org/b/id/9259256-L.jpg",
   },
   {
@@ -93,6 +104,7 @@ const books = [
     author: "Robert C. Martin",
     category: "Programming",
     rating: 4.9,
+    description: "A programming classic that teaches developers how to write clean, maintainable, and efficient software.",
     image: "https://covers.openlibrary.org/b/id/9611996-L.jpg",
   },
   {
@@ -101,6 +113,7 @@ const books = [
     author: "Douglas Crockford",
     category: "Programming",
     rating: 4.7,
+    description: "An insightful guide that focuses on JavaScript's best features and coding practices.",
     image: "https://covers.openlibrary.org/b/id/8091016-L.jpg",
   },
   {
@@ -109,6 +122,7 @@ const books = [
     author: "Marijn Haverbeke",
     category: "Programming",
     rating: 4.8,
+    description: "A modern introduction to JavaScript programming with practical examples and coding exercises.",
     image: "https://eloquentjavascript.net/img/cover.jpg",
   },
   {
@@ -117,6 +131,7 @@ const books = [
     author: "J.R.R. Tolkien",
     category: "Fantasy",
     rating: 4.9,
+    description: "Bilbo Baggins joins an unforgettable quest filled with dragons, dwarves, treasure, and adventure.",
     image: "https://covers.openlibrary.org/b/id/6979861-L.jpg",
   },
   {
@@ -125,6 +140,7 @@ const books = [
     author: "Patrick Rothfuss",
     category: "Fantasy",
     rating: 4.8,
+    description: "The story of Kvothe, a gifted musician and magician, who recounts the extraordinary events of his life.",
     image: "https://covers.openlibrary.org/b/id/8231856-L.jpg",
   },
   {
@@ -133,6 +149,7 @@ const books = [
     author: "Walter Isaacson",
     category: "Biography",
     rating: 4.8,
+    description: "The inspiring biography of Steve Jobs, detailing his innovations and lasting impact on the technology industry.",
     image: "https://covers.openlibrary.org/b/id/7222246-L.jpg",
   },
   {
@@ -141,6 +158,7 @@ const books = [
     author: "Nelson Mandela",
     category: "Biography",
     rating: 4.9,
+    description: "Nelson Mandela's autobiography chronicling his struggle against apartheid and his journey to freedom.",
     image: "https://covers.openlibrary.org/b/id/8097441-L.jpg",
   },
   {
@@ -149,6 +167,7 @@ const books = [
     author: "A.P.J. Abdul Kalam",
     category: "Biography",
     rating: 4.9,
+    description: "The autobiography of Dr. A.P.J. Abdul Kalam, describing his inspiring journey from a small town to becoming India's President.",
     image: "https://covers.openlibrary.org/b/id/8221256-L.jpg",
   },
   {
@@ -157,6 +176,7 @@ const books = [
     author: "Anne Frank",
     category: "History",
     rating: 4.8,
+    description: "Anne Frank's famous diary provides a powerful account of life in hiding during World War II.",
     image: "https://covers.openlibrary.org/b/id/8234146-L.jpg",
   },
   {
@@ -165,6 +185,7 @@ const books = [
     author: "Jared Diamond",
     category: "History",
     rating: 4.7,
+    description: "An award-winning history book explaining how geography and environment shaped the development of civilizations.",
     image: "https://covers.openlibrary.org/b/id/8235116-L.jpg",
   },
   {
@@ -173,6 +194,7 @@ const books = [
     author: "Napoleon Hill",
     category: "Self Help",
     rating: 4.8,
+    description: "A timeless self-improvement book sharing principles for achieving success, wealth, and personal growth.",
     image: "https://covers.openlibrary.org/b/id/8225636-L.jpg",
   },
   {
@@ -181,6 +203,7 @@ const books = [
     author: "Eckhart Tolle",
     category: "Self Help",
     rating: 4.7,
+    description: "A spiritual guide that teaches readers how living in the present moment leads to peace and happiness.",
     image: "https://covers.openlibrary.org/b/id/6979868-L.jpg",
   },
   {
@@ -189,9 +212,12 @@ const books = [
     author: "Cal Newport",
     category: "Self Help",
     rating: 4.8,
+    description: "A productivity book that explains how focused, distraction-free work can help achieve outstanding results.",
     image: "https://covers.openlibrary.org/b/id/8379012-L.jpg",
   },
 ];
+
+
 
 
 
