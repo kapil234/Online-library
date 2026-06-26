@@ -58,98 +58,142 @@ function AddBook() {
   };
 
   return (
-    <>
-      <Navbar />
 
-      <div className="max-w-2xl mx-auto mt-10 p-8 bg-white shadow-lg rounded-lg">
+  <>
+    <Navbar />
 
-        <h1 className="text-3xl font-bold mb-8 text-center">
-          Add New Book
-        </h1>
+    <div className="min-h-screen bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 flex items-center justify-center py-12 px-4">
 
-        <form onSubmit={handleSubmit} className="space-y-5">
+      <div className="bg-white/90 backdrop-blur-lg shadow-2xl rounded-2xl overflow-hidden max-w-6xl w-full grid md:grid-cols-2">
 
-          <input
-            type="text"
-            name="title"
-            placeholder="Book Title"
-            value={book.title}
-            onChange={handleChange}
-            className="w-full border p-3 rounded"
+        {/* Left Side */}
+        <div className="hidden md:flex flex-col justify-center items-center bg-indigo-700 text-white p-10">
+
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3145/3145765.png"
+            alt="Books"
+            className="w-72 mb-8"
           />
-          <p className="text-red-500">{errors.title}</p>
 
-          <input
-            type="text"
-            name="author"
-            placeholder="Author"
-            value={book.author}
-            onChange={handleChange}
-            className="w-full border p-3 rounded"
-          />
-          <p className="text-red-500">{errors.author}</p>
+          <h1 className="text-4xl font-bold mb-4">
+            Add Your Favorite Book
+          </h1>
 
-          <select
-            name="category"
-            value={book.category}
-            onChange={handleChange}
-            className="w-full border p-3 rounded"
-          >
-            <option value="">Select Category</option>
-            <option>Fiction</option>
-            <option>Non Fiction</option>
-            <option>Sci-Fi</option>
-            <option>Programming</option>
-            <option>Fantasy</option>
-            <option>Biography</option>
-            <option>History</option>
-            <option>Self Help</option>
-          </select>
-          <p className="text-red-500">{errors.category}</p>
+          <p className="text-lg text-center text-indigo-100">
+            Expand your online library by adding books with complete details.
+            Fill out the form and they'll instantly appear in the library.
+          </p>
 
-          <input
-            type="number"
-            step="0.1"
-            min="1"
-            max="5"
-            name="rating"
-            placeholder="Rating"
-            value={book.rating}
-            onChange={handleChange}
-            className="w-full border p-3 rounded"
-          />
-          <p className="text-red-500">{errors.rating}</p>
+        </div>
 
-          <input
-            type="text"
-            name="image"
-            placeholder="Image URL"
-            value={book.image}
-            onChange={handleChange}
-            className="w-full border p-3 rounded"
-          />
-          <p className="text-red-500">{errors.image}</p>
+        {/* Right Side */}
+        <div className="p-10">
 
-          <textarea
-            rows="5"
-            name="description"
-            placeholder="Description"
-            value={book.description}
-            onChange={handleChange}
-            className="w-full border p-3 rounded"
-          />
-          <p className="text-red-500">{errors.description}</p>
+          <h2 className="text-4xl font-bold text-center text-indigo-700 mb-8">
+            📚 Add New Book
+          </h2>
 
-          <button
-            className="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700"
-          >
-            Add Book
-          </button>
+          <form onSubmit={handleSubmit} className="space-y-5">
 
-        </form>
+            <div>
+              <input
+                type="text"
+                name="title"
+                placeholder="Book Title"
+                value={book.title}
+                onChange={handleChange}
+                className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 outline-none"
+              />
+              <p className="text-red-500 text-sm mt-1">{errors.title}</p>
+            </div>
+
+            <div>
+              <input
+                type="text"
+                name="author"
+                placeholder="Author Name"
+                value={book.author}
+                onChange={handleChange}
+                className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 outline-none"
+              />
+              <p className="text-red-500 text-sm mt-1">{errors.author}</p>
+            </div>
+
+            <div>
+              <select
+                name="category"
+                value={book.category}
+                onChange={handleChange}
+                className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 outline-none"
+              >
+                <option value="">Select Category</option>
+                <option>Fiction</option>
+                <option>Non Fiction</option>
+                <option>Sci-Fi</option>
+                <option>Programming</option>
+                <option>Fantasy</option>
+                <option>Biography</option>
+                <option>History</option>
+                <option>Self Help</option>
+              </select>
+              <p className="text-red-500 text-sm mt-1">{errors.category}</p>
+            </div>
+
+            <div>
+              <input
+                type="number"
+                name="rating"
+                min="1"
+                max="5"
+                step="0.1"
+                placeholder="Rating (1-5)"
+                value={book.rating}
+                onChange={handleChange}
+                className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 outline-none"
+              />
+              <p className="text-red-500 text-sm mt-1">{errors.rating}</p>
+            </div>
+
+            <div>
+              <input
+                type="text"
+                name="image"
+                placeholder="Image URL"
+                value={book.image}
+                onChange={handleChange}
+                className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 outline-none"
+              />
+              <p className="text-red-500 text-sm mt-1">{errors.image}</p>
+            </div>
+
+            <div>
+              <textarea
+                rows="4"
+                name="description"
+                placeholder="Book Description"
+                value={book.description}
+                onChange={handleChange}
+                className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-indigo-500 outline-none"
+              />
+              <p className="text-red-500 text-sm mt-1">{errors.description}</p>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-lg transition duration-300 shadow-lg"
+            >
+              📖 Add Book
+            </button>
+
+          </form>
+
+        </div>
+
       </div>
-    </>
-  );
+
+    </div>
+  </>
+);
 }
 
 export default AddBook
