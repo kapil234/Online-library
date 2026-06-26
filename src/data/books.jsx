@@ -19,7 +19,7 @@ const books = [
   },
   {
     id: 3,
-    title: "Harry Potter and the Sorcerer's Stone",
+    title: "Harry Potter ",
     author: "J.K. Rowling",
     category: "Fantasy",
     rating: 4.9,

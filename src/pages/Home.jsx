@@ -1,14 +1,16 @@
-
 import Hero from "../components/Hero";
 import Categories from "../components/Categories";
 import BookCard from "../components/BookCard";
 import books from "../data/books";
 
- function Home() {
+function Home() {
+
+  const popularBooks = [...books]
+    .sort((a, b) => b.rating - a.rating)
+    .slice(0, 4);
+
   return (
     <>
-      
-
       <Hero />
 
       <Categories />
@@ -19,13 +21,17 @@ import books from "../data/books";
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {books.map((book) => (
-            <BookCard key={book.id} book={book} />
+          {popularBooks.map((book) => (
+            <BookCard
+              key={book.id}
+              book={book}
+            />
           ))}
         </div>
       </section>
     </>
   );
 }
+
 
 export default Home;

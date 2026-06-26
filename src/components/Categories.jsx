@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const categories = [
   "Fiction",
   "Non Fiction",
@@ -19,15 +20,16 @@ const categories = [
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
 
-        {categories.map((cat) => (
-          <div
+       {categories.map((cat) => (
+          <Link
             key={cat}
-            className="bg-white shadow-lg rounded-xl p-8 text-center hover:bg-blue-600 hover:text-white duration-300 cursor-pointer"
+            to={`/books/${cat}`}
+            className="bg-white shadow-lg rounded-xl p-8 text-center hover:bg-blue-600 hover:text-white duration-300 cursor-pointer block"
           >
             <h3 className="text-xl font-semibold">
               {cat}
             </h3>
-          </div>
+          </Link>
         ))}
 
       </div>
