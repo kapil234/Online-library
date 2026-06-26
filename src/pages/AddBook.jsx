@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addBook } from "../redux/booksSlice";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
+
 
 function AddBook() {
   const dispatch = useDispatch();
@@ -60,13 +60,13 @@ function AddBook() {
   return (
 
   <>
-    <Navbar />
+   
 
     <div className="min-h-screen bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 flex items-center justify-center py-12 px-4">
 
       <div className="bg-white/90 backdrop-blur-lg shadow-2xl rounded-2xl overflow-hidden max-w-6xl w-full grid md:grid-cols-2">
 
-        {/* Left Side */}
+       {/* left side  */}
         <div className="hidden md:flex flex-col justify-center items-center bg-indigo-700 text-white p-10">
 
           <img

@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import books from "../data/books";
-import Navbar from "../components/Navbar";
+
 import { useSelector } from "react-redux";
 
 function BookDetails() {
@@ -28,7 +28,7 @@ function BookDetails() {
 
   return (
     <>
-      <Navbar />
+      
 
       <div className="max-w-6xl mx-auto p-10">
 

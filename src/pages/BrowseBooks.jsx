@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 import SearchBar from "../components/SearchBar";
 import BookCard from "../components/BookCard";
-import Navbar from "../components/Navbar";
+
 
 function BrowseBooks() {
   const { category } = useParams();
@@ -29,7 +29,7 @@ function BrowseBooks() {
 
   return (
     <>
-      <Navbar />
+      
 
       <div className="max-w-7xl mx-auto py-10 px-5">
 

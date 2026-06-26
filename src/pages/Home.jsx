@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+
 import Hero from "../components/Hero";
 import Categories from "../components/Categories";
 import BookCard from "../components/BookCard";
@@ -7,7 +7,7 @@ import books from "../data/books";
  function Home() {
   return (
     <>
-      <Navbar />
+      
 
       <Hero />
 
