@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <section className="bg-gradient-to-r from-indigo-700 to-blue-600 text-white py-16 md:py-24">
+    <section className="bg-gradient-to-r from-violet-400 to-blue-500 text-white py-16 md:py-24">
       <div className="max-w-5xl mx-auto text-center px-6">
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
